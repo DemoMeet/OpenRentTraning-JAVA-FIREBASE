@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/main2"
+    android:orientation="vertical"
+    tools:context=".admin.MainActivity2">
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:id="@+id/add"
+        android:elevation="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="40dp"
+        app:cardBackgroundColor="#00B4BD2D">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/circle_edittext" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/add"
+            android:layout_marginStart="10dp"
+            app:tint="@color/main" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="60dp"
+            android:text="Add Sessions"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/main"
+            android:gravity="center_vertical"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:id="@+id/viewsubmission"
+        android:elevation="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="40dp"
+        app:cardBackgroundColor="#00000000">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/circle_button" />
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/submission"
+            android:layout_marginStart="10dp"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="60dp"
+            android:text="Submissions"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+</LinearLayout>
