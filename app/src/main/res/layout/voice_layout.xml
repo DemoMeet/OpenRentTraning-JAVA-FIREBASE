@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llt"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:background="@color/main2"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="fitXY"
+            android:background="#00FFFFFF"
+            android:layout_gravity="center"
+            android:src="@drawable/play"
+            android:layout_marginStart="10dp"/>
+
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="fitXY"
+            android:background="#00FFFFFF"
+            android:layout_gravity="center"
+            android:src="@drawable/stop"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/vq"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/main"
+            android:layout_height="50dp"/>
+        <ImageButton
+            android:id="@+id/mic"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="fitXY"
+            android:background="#00FFFFFF"
+            android:layout_gravity="center"
+            android:src="@drawable/mic"
+            android:layout_marginEnd="10dp"/>
+        <ImageButton
+            android:id="@+id/upload"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="fitXY"
+            android:background="#00FFFFFF"
+            android:layout_gravity="center"
+            android:src="@drawable/upload"
+            android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="#00D6D6D6"
+        app:cardCornerRadius="40dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/circle_button" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Add"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
